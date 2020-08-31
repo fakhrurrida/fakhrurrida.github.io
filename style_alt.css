@@ -1,0 +1,385 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+section
+{
+    padding: 80px;
+}
+.footer
+{
+    background: black;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+.banner
+{
+    position: relative;
+    min-height: 100vh;
+    background: url(img/edosnap.png);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner h2
+{
+    font-size: 3em;
+    color: black;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+.banner h2 span
+{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.banner h3
+{
+    font-size: 1.5em;
+    color: black;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+.btn
+{
+    position: relative;
+    background: #2196f3;
+    display: inline-block;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky
+{
+    background: black;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+header.sticky .logo
+{
+    color: white; 
+}
+header.sticky ul li a
+{
+    color: white; 
+}
+header.sticky ul li a:hover
+{
+    color: #2196f3;
+}
+header .logo
+{
+    color: black;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+header ul
+{
+    position: relative;
+    display: flex;
+}
+header ul li
+{
+    position: relative;
+    list-style: none;
+}
+header ul li a
+{
+    position: relative;
+    display: inline-block;
+    margin: 0px 15px;
+    color: black;
+    text-decoration: none;
+}
+header ul li a:hover
+{
+    color: white;
+    text-decoration: none;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.heading
+{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: black;
+}
+.heading h2
+{
+    font-weight: 600;
+    font-size: 30px;
+}
+.content
+{
+    display: flex;
+    justify-content: space-between;   
+}
+.contentBx
+{
+    padding-right: 30px;
+    max-width: 50%;
+}
+.contentBx h3
+{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.contentBx p
+{
+    line-height: 1.7em;
+}
+.width50
+{
+    min-width: 50%;
+}
+.width30
+{
+    min-width: 40%;
+}
+img
+{
+    max-width: 100%;
+}
+.experience
+{
+    background: black;
+    color: white;
+}
+.experience .heading
+{
+    color: white;
+}
+.experience .heading h2
+{
+    color: white;
+}
+.experience .content
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.experience .content .experienceBx
+{
+    text-decoration: none;
+    padding: 40px 20px;
+    background: #222;
+    color: white;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+.experience .content .experienceBx a
+{
+    text-decoration: none;  
+    color: white;
+}
+.experience .content .experienceBx a:visited
+{
+    text-decoration: none;  
+    color: white;
+}
+.experience .content .experienceBx:hover
+{
+    transform: scale(1.1);
+    background: #2196f3;
+    
+}
+.experience .content .experienceBx img
+{
+    max-width: 250px;
+    padding-bottom: 0.5em;
+}
+.experience .content .experienceBx h2
+{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+.experience .content p
+{
+    color: lightgray;
+}
+.project
+{
+    background: white;
+    color: black;
+}
+.project .heading
+{
+    color: black;
+}
+.project .heading h2
+{
+    color: black;
+}
+.project .content
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.project .content .projectBx
+{
+    padding: 40px 20px;
+    background:#222;
+    color: white;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+.project .content .projectBx:hover
+{
+    transform: scale(1.1);
+    background: #2196f3;
+    color: white;
+    
+}
+.project .content .projectBx img
+{
+    max-width: 250px;
+    padding-bottom: 0.5em;
+}
+.project .content .projectBx h2
+{
+    font-size: 20px;
+    font-weight: 600;
+}
+.project .content .projectBx a
+{
+    text-decoration: none;  
+    color: white;
+}
+.project .content .projectBx a:visited
+{
+    text-decoration: none;  
+    color: white;
+}
+.project .content p
+{
+    padding-top: 0.4em;
+    color: whitesmoke;
+}
+.resume
+{
+    background: black;
+    color: white;
+}
+.resume .content
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.resume .content .resumeBx
+{
+    border-radius: 50%;
+    padding: 20px 20px;
+    background: #222;
+    color: white;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+    align-items: center;
+}
+.resume .content .resumeBx:hover
+{
+    transform: scale(1.17);
+    background: #2196f3;
+    color: white;
+    
+}
+.resume .heading
+{
+    color: white;
+}
+.resume .heading h2
+{
+    color: white;
+}
+.contact
+{
+    background: white;
+    color: black;
+}
+.contact .content
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.contact .content .contactBx
+{
+    border-radius: 2px;
+    padding: 1 20px;
+    background: white;
+    color: black;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+    align-items: center;
+}
+.contact .content .contactBx:hover
+{
+    padding: 15px 15px;
+    transform: scale(1.02);
+    background: #2196f3;
+    color: white;
+    
+}
+.contact .content .contactBx a
+{
+    text-decoration: none;  
+    color: black;
+}
+.contact .content .contactBx a:hover
+{
+    text-decoration: none;  
+    color: white;
+}
+.experience .content .contactBx a:visited
+{
+    text-decoration: none;  
+    color: black;
+}
